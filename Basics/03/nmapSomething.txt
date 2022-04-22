@@ -1,0 +1,6 @@
+PORT      STATE SERVICE VERSION
+32371/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Getting Started &#8211; Just another WordPress site
+|_http-generator: WordPress 5.6.1
+

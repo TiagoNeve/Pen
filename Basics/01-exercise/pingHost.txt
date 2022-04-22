@@ -1,0 +1,10 @@
+PING 10.129.42.254 (10.129.42.254) 56(84) bytes of data.
+64 bytes from 10.129.42.254: icmp_seq=1 ttl=63 time=86.2 ms
+64 bytes from 10.129.42.254: icmp_seq=2 ttl=63 time=88.3 ms
+64 bytes from 10.129.42.254: icmp_seq=3 ttl=63 time=89.3 ms
+64 bytes from 10.129.42.254: icmp_seq=4 ttl=63 time=87.6 ms
+64 bytes from 10.129.42.254: icmp_seq=5 ttl=63 time=85.5 ms
+
+--- 10.129.42.254 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 85.497/87.375/89.327/1.391 ms
