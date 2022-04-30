@@ -16,3 +16,11 @@
 14. whereis -> Consegue encontrar binários e páginas de manuais
 15. which cat -> Dar informações sobre o comando, como aliases e localização do arquivo no sistema.
 16. file -> Dar informações do tipo de arquivo
+
+## Descritores de arquivos
+> echo "senha" | sha256sum
+ - Pode ser utilizado como senha e.e
+> echo $?
+  - Informa o código do último comando que foi executado
+> echo !$
+  - Retorna o último parâmetro que foi passado no comando anterior, para fins de agilidade na hora de escrever comandos aninhados
